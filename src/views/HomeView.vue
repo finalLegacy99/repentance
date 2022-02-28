@@ -676,7 +676,7 @@ export default {
       }
     }).then(response => {
       this.texts = response.data;
-      console.log(this.texts);
+      // console.log(this.texts);
 
       for (let text of this.texts){
         if (text.area === "title"){
@@ -712,8 +712,8 @@ export default {
   methods: {
     setTextSelection: function(index){
       this.textIndex = index + 1;
-      console.log("setting text index", this.textIndex);
-      console.log("setting selected text", this.texts[this.textIndex]);
+      // console.log("setting text index", this.textIndex);
+      // console.log("setting selected text", this.texts[this.textIndex]);
       this.input = this.texts[index].input;
     },
     edit: function(){
