@@ -105,13 +105,13 @@ export default {
   },
   methods: {
     auth: function(){
-     
-      if (localStorage.getItem("jwt")){
+      return true;
+      // if (localStorage.getItem("jwt")){
         
-        return true;
-      } else {
-        return false;
-      }
+      //   return true;
+      // } else {
+      //   return false;
+      // }
     },
     login: function(){
       var params = {

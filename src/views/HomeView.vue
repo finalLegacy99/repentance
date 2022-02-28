@@ -744,13 +744,13 @@ export default {
       });
     },
     auth: function(){
-     
-      if (localStorage.getItem("jwt")){
+      return true;
+      // if (localStorage.getItem("jwt")){
         
-        return true;
-      } else {
-        return false;
-      }
+      //   return true;
+      // } else {
+      //   return false;
+      // }
     }
   }
 };
