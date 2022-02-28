@@ -75,7 +75,14 @@ export default {
         password: this.password
       };
       axios
-        .post("/api/sessions", params)
+        .post("/api/sessions", params,
+        { 
+          headers: {
+            'content-type': 'application/json',
+            'Accept': 'application/json'
+          }, 
+          
+        })
         .then(response => {
           axios.defaults.headers.common["Authorization"] =
             "Bearer " + response.data.jwt;
