@@ -744,7 +744,7 @@ export default {
       });
     },
     auth: function(){
-      return true;
+      return false;
       // if (localStorage.getItem("jwt")){
         
       //   return true;
